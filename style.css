@@ -2,4 +2,135 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+#search-area {
+    margin: 1rem 2rem;
+}
+
+#search-area form {
+    margin: 2rem 0rem;
+}
+
+#search-area input, #search-area label {
+    font-size: 1.24rem;
+}
+
+#search-area input {
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+}
+
+.action-btn {
+    border: 0;
+    padding: 0.6rem 2rem;
+    background-color: #141414;
+    color: white;
+    transition: 0.2s;
+}
+
+.action-btn:hover {
+    background-color:chocolate;
+}
+
+.action-btn:focus {
+    background-color: navy;
+}
+
+.action-btn:disabled {
+    opacity: 0.2;
+}
+
+
+#weather-data {
+    margin: 1rem 2rem;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Weather Status Card Styling */
+.weather-status {
+    background-color: #141414;
+    color: white;
+    display: flex;
+    gap: 6rem;
+    align-items:center;
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+}
+
+/* Conditions Styling */
+.conditions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Temperature Info Styling */
+
+.current-temp {
+    font-size: 3rem;
+}
+.feels-like-temp {
+    font-size: 0.8rem;
+}
+
+/* Location Info styling */
+.location-name {
+    font-size: 2.4rem;
+}
+
+.location span {
+    display: block;
+}
+
+.location-region-info {
+    margin-top: 0.5rem;
+}
+
+/* Wind Compass Styling */
+.wind-compass {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wind-compass-visual {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 1rem 1rem;
+}
+
+.wind-compass-visual img {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    filter: invert();
+    transition: transform 1s;
+}
+
+.wind-compass-north {
+    position: absolute;
+    top: 0px;
+    font-size: 0.8rem;
+}
+
+.wind-compass-info {
+    margin-top: 0.4rem;
+    z-index: 1;
+    font-size: 0.8rem;
+    text-align: center;
 }

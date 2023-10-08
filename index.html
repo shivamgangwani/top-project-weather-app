@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Project: Weather App</h1>
+    <div id="search-area">
+        <h1>Project: Weather App</h1>
+        <form id="get-weather-data">
+            <label for="place">Place: </label>
+            <input type="text" name="place" id="place" autocomplete="off">
+            <input type="submit" class="action-btn" value="Search">
+            <input type="reset" class="action-btn" value="Clear Cache">
+        </form>
+    </div>
+    <div id="weather-data"></div>
     <script src="script.js"></script>
 </body>
 </html>
